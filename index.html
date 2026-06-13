@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harsh Rajak — Frontend Developer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body class="loading">
+
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <span class="preloader-logo">MYSELF<span class="dot">.</span></span>
+      <div class="preloader-bar"><div class="preloader-fill"></div></div>
+    </div>
+  </div>
+
+  <div class="scroll-progress" id="scroll-progress"></div>
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <div class="custom-cursor" id="cursor-dot"></div>
+  <div class="custom-cursor-ring" id="cursor-ring"></div>
+
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#home">HR<span class="dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#about" class="mob-link">About</a>
+      <a href="#skills" class="mob-link">Skills</a>
+      <a href="#projects" class="mob-link">Projects</a>
+      <a href="#certifications" class="mob-link">Certs</a>
+      <a href="#contact" class="mob-link">Contact</a>
+    </div>
+  </nav>
+
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <canvas id="particles-canvas" aria-hidden="true"></canvas>
+      <div class="hero-spotlight" id="hero-spotlight"></div>
+      <div class="grid-overlay"></div>
+      <div class="blob blob1"></div>
+      <div class="blob blob2"></div>
+    </div>
+    <div class="hero-content">
+      <h1 class="hero-name hero-animate" style="--d:0.25s">Harsh<br /><span class="name-accent shimmer">Rajak</span></h1>
+      <p class="hero-role hero-animate" style="--d:0.4s"><span class="typing-wrap"><span id="typed-text"></span><span class="cursor">|</span></span></p>
+      <p class="hero-sub hero-animate" style="--d:0.55s">B.Tech CSE Graduate · Kolkata, India<br />Building clean, fast, and responsive web experiences.</p>
+      <div class="hero-cta hero-animate" style="--d:0.7s">
+        <a href="#projects" class="btn btn-primary magnetic">View My Work</a>
+        <a href="#contact" class="btn btn-ghost magnetic">Get In Touch</a>
+      </div>
+      <div class="hero-socials hero-animate" style="--d:0.85s">
+        <a href="mailto:harshrajak2421@gmail.com" title="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+        </a>
+        <a href="https://github.com/IMHRX" title="GitHub" target="_blank">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85 0 1.71.11 2.51.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10.01 10.01 0 0 0 22 12c0-5.52-4.48-10-10-10z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/harsh-rajak-328b04244/" title="LinkedIn" target="_blank">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zm1.78 13.02H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint"><span>scroll</span><div class="scroll-line"></div></div>
+  </section>
+
+  <div class="tech-marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>React.js</span><span>JavaScript</span><span>Tailwind CSS</span><span>HTML5</span><span>CSS3</span><span>Node.js</span><span>Git</span><span>MySQL</span><span>MongoDB</span><span>Python</span><span>Java</span><span>REST APIs</span>
+      <span>React.js</span><span>JavaScript</span><span>Tailwind CSS</span><span>HTML5</span><span>CSS3</span><span>Node.js</span><span>Git</span><span>MySQL</span><span>MongoDB</span><span>Python</span><span>Java</span><span>REST APIs</span>
+    </div>
+  </div>
+
+  <div class="section-divider"></div>
+
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-label">01 / About</div>
+      <h2 class="section-title">Who I Am</h2>
+      <div class="about-grid">
+        <div class="about-left">
+          <div class="about-avatar">
+            <img src="profile.png" alt="Harsh Rajak" class="avatar-img" />
+            <div class="avatar-ring"></div>
+          </div>
+          <div class="about-stats">
+            <div class="stat-item"><span class="stat-num" data-count="8.0" data-decimals="1">0</span><span class="stat-label">CGPA</span></div>
+            <div class="stat-item"><span class="stat-num" data-count="200" data-suffix="+">0</span><span class="stat-label">Problems Solved</span></div>
+            <div class="stat-item"><span class="stat-num" data-count="2">0</span><span class="stat-label">Projects Built</span></div>
+          </div>
+        </div>
+        <div class="about-right">
+          <p class="about-text">I'm a <strong>Computer Science graduate</strong> from Narula Institute of Technology, Kolkata, with a passion for building clean, responsive, and user-friendly web applications.</p>
+          <p class="about-text">I specialize in <strong>React.js, JavaScript, and Tailwind CSS</strong>, and enjoy solving real-world problems through code. I'm actively looking for entry-level roles as an <strong>Associate Engineer, Software Developer, or Frontend Developer</strong>.</p>
+          <div class="education-timeline">
+            <div class="edu-item">
+              <div class="edu-year">2021–2025</div>
+              <div class="edu-info"><strong>B.Tech in Computer Science</strong><span>Narula Institute of Technology, Kolkata · CGPA 8.0</span></div>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary magnetic" style="margin-top:2rem;display:inline-block;">Hire Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <div class="section-label">02 / Skills</div>
+      <h2 class="section-title">Tech Stack</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <div class="skill-group-label">Languages</div>
+          <div class="skill-chips">
+            <div class="chip"><span class="chip-icon">☕</span> Java<div class="chip-bar"><div class="chip-fill" style="--w:85%"></div></div></div>
+            <div class="chip"><span class="chip-icon">🐍</span> Python<div class="chip-bar"><div class="chip-fill" style="--w:75%"></div></div></div>
+            <div class="chip"><span class="chip-icon">⚡</span> JavaScript<div class="chip-bar"><div class="chip-fill" style="--w:90%"></div></div></div>
+            <div class="chip"><span class="chip-icon">🌐</span> HTML5<div class="chip-bar"><div class="chip-fill" style="--w:92%"></div></div></div>
+            <div class="chip"><span class="chip-icon">🎨</span> CSS3<div class="chip-bar"><div class="chip-fill" style="--w:88%"></div></div></div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-label">Frontend</div>
+          <div class="skill-chips">
+            <div class="chip"><span class="chip-icon">⚛️</span> React.js<div class="chip-bar"><div class="chip-fill" style="--w:88%"></div></div></div>
+            <div class="chip"><span class="chip-icon">💨</span> Tailwind CSS<div class="chip-bar"><div class="chip-fill" style="--w:90%"></div></div></div>
+            <div class="chip"><span class="chip-icon">🔌</span> REST APIs<div class="chip-bar"><div class="chip-fill" style="--w:80%"></div></div></div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-label">Databases</div>
+          <div class="skill-chips">
+            <div class="chip"><span class="chip-icon">🗄️</span> MySQL<div class="chip-bar"><div class="chip-fill" style="--w:82%"></div></div></div>
+            <div class="chip"><span class="chip-icon">🍃</span> MongoDB<div class="chip-bar"><div class="chip-fill" style="--w:72%"></div></div></div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-label">Tools & Analytics</div>
+          <div class="skill-chips">
+            <div class="chip"><span class="chip-icon">🐙</span> Git / GitHub<div class="chip-bar"><div class="chip-fill" style="--w:88%"></div></div></div>
+            <div class="chip"><span class="chip-icon">📊</span> Power BI<div class="chip-bar"><div class="chip-fill" style="--w:75%"></div></div></div>
+            <div class="chip"><span class="chip-icon">📈</span> Tableau<div class="chip-bar"><div class="chip-fill" style="--w:70%"></div></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="cs-fundamentals">
+        <div class="cs-label">CS Fundamentals</div>
+        <div class="cs-tags">
+          <span class="cs-tag">DBMS</span><span class="cs-tag">SQL</span><span class="cs-tag">OOP</span>
+          <span class="cs-tag">Operating Systems</span><span class="cs-tag">Computer Networks</span><span class="cs-tag">Data Structures</span>
+        </div>
+        <div class="cs-label" style="margin-top:1.5rem;">Soft Skills</div>
+        <div class="cs-tags">
+          <span class="cs-tag soft">Problem Solving</span><span class="cs-tag soft">Debugging</span>
+          <span class="cs-tag soft">Team Collaboration</span><span class="cs-tag soft">Time Management</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-label">03 / Projects</div>
+      <h2 class="section-title">What I've Built</h2>
+      <div class="projects-grid">
+        <div class="project-card tilt-card">
+          <div class="project-header">
+            <div class="project-icon">🛒</div>
+            <div class="project-links">
+              <a href="YOUR_GITHUB_LINK" target="_blank" class="proj-link" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85 0 1.71.11 2.51.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10.01 10.01 0 0 0 22 12c0-5.52-4.48-10-10-10z"/></svg>
+              </a>
+              <a href="YOUR_DEMO_LINK" target="_blank" class="proj-link" title="Live Demo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">E-commerce Website</h3>
+          <p class="project-desc">A fully responsive e-commerce web app built with React.js and Vite. Features dynamic product pages, shopping cart, and a clean mobile-first UI.</p>
+          <ul class="project-highlights">
+            <li>⚡ Fast builds with Vite</li>
+            <li>🧩 Reusable React components & state management</li>
+            <li>📱 Mobile-first responsive design</li>
+            <li>🎨 Clean UI with Lucide Icons</li>
+          </ul>
+          <div class="project-stack">
+            <span class="stack-tag react">React.js</span>
+            <span class="stack-tag vite">Vite</span>
+            <span class="stack-tag tw">Tailwind</span>
+            <span class="stack-tag js">JavaScript</span>
+          </div>
+        </div>
+        <div class="project-card tilt-card">
+          <div class="project-header">
+            <div class="project-icon">📈</div>
+            <div class="project-links">
+              <a href="YOUR_GITHUB_LINK" target="_blank" class="proj-link" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85 0 1.71.11 2.51.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10.01 10.01 0 0 0 22 12c0-5.52-4.48-10-10-10z"/></svg>
+              </a>
+              <a href="YOUR_DEMO_LINK" target="_blank" class="proj-link" title="Live Demo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">CryptoPrice Tracker</h3>
+          <p class="project-desc">Real-time cryptocurrency price dashboard powered by the CoinGecko API. Shows live prices, market caps, and 24-hour changes in a clean, mobile-friendly interface.</p>
+          <ul class="project-highlights">
+            <li>💹 Live data via CoinGecko API</li>
+            <li>📊 Market cap & 24h change indicators</li>
+            <li>📱 Responsive dashboard layout</li>
+            <li>🌐 Deployed on GitHub Pages</li>
+          </ul>
+          <div class="project-stack">
+            <span class="stack-tag html">HTML5</span>
+            <span class="stack-tag css">CSS3</span>
+            <span class="stack-tag js">JavaScript</span>
+            <span class="stack-tag tw">Tailwind</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications" class="section certs-section">
+    <div class="container">
+      <div class="section-label">04 / Achievements</div>
+      <h2 class="section-title">Certifications & Awards</h2>
+      <div class="certs-grid">
+        <div class="cert-card"><div class="cert-badge">🏢</div><div class="cert-info"><h4>Advanced Software Engineering</h4><p>Job Simulation — <strong>Forage</strong></p></div><div class="cert-ribbon">Verified</div></div>
+        <div class="cert-card"><div class="cert-badge">🎓</div><div class="cert-info"><h4>Responsive Website Development & Design</h4><p>Capstone — <strong>University of London / Coursera</strong></p></div><div class="cert-ribbon">Verified</div></div>
+        <div class="cert-card"><div class="cert-badge">🟩</div><div class="cert-info"><h4>SQL (Basic) Certificate</h4><p><strong>HackerRank</strong></p></div><div class="cert-ribbon">Verified</div></div>
+        <div class="cert-card achievement"><div class="cert-badge">💻</div><div class="cert-info"><h4>200+ Problems Solved</h4><p>Competitive Programming — <strong>CodeChef</strong></p></div><div class="cert-ribbon gold">Achievement</div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-label">05 / Contact</div>
+      <h2 class="section-title">Let's Work Together</h2>
+      <p class="contact-sub">I'm actively looking for <strong>internships and entry-level roles</strong>.<br />Drop me a message — I reply within 24 hours!</p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">📧</div>
+            <div><div class="contact-label">Email</div><a href="mailto:harshrajak2421@gmail.com" class="contact-value">harshrajak2421@gmail.com</a></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div><div class="contact-label">Location</div><span class="contact-value">Kolkata, West Bengal, India</span></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📱</div>
+            <div><div class="contact-label">Phone</div><a href="tel:+918972032749" class="contact-value">+91 8972032749</a></div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://github.com/YOUR_USERNAME" target="_blank" class="social-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85 0 1.71.11 2.51.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10.01 10.01 0 0 0 22 12c0-5.52-4.48-10-10-10z"/></svg>
+              GitHub
+            </a>
+            <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank" class="social-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zm1.78 13.02H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <div class="form-group"><label for="name">Name</label><input type="text" id="name" placeholder="Your name" required /></div>
+          <div class="form-group"><label for="email">Email</label><input type="email" id="email" placeholder="your@email.com" required /></div>
+          <div class="form-group"><label for="subject">Subject</label><input type="text" id="subject" placeholder="Job Opportunity / Collaboration" /></div>
+          <div class="form-group"><label for="message">Message</label><textarea id="message" rows="5" placeholder="Hi Harsh, I'd like to discuss..." required></textarea></div>
+          <button type="submit" class="btn btn-primary w-full magnetic" id="submit-btn">Send Message ✉️</button>
+          <div class="form-success" id="form-success">✅ Message sent! I'll reply soon.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="nav-logo">HR<span class="dot">.</span></span>
+      <p>Built by Harsh Rajak · 2026</p>
+      <p class="footer-tech">HTML · CSS · JavaScript</p>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scroll-top" title="Back to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
